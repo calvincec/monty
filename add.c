@@ -14,7 +14,7 @@ void _add(stack_t **stack, unsigned int total_lines)
 
 	if (!stack || !*stack || !((*stack)->next))
 	{
-		fprintf(stderr, "L%d: the stack is too short to be added\n", total_lines);
+		fprintf(stderr, "L%d: can't add, stack too short\n", total_lines);
 		status = EXIT_FAILURE;
 		return;
 	}

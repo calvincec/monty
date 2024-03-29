@@ -14,13 +14,13 @@ void mod(stack_t **stack, unsigned int total_lines)
 
 	if (!stack || !*stack || !((*stack)->next))
 	{
-		fprintf(stderr, "L%d: can't get modulo, stack too short\n", total_lines);
+		fprintf(stderr, "L%d: can't mod, stack too short\n", total_lines);
 		status = EXIT_FAILURE;
 		return;
 	}
 	if (((*stack)->n) == 0)
 	{
-		fprintf(stderr, "L%d: division by zero error\n", total_lines);
+		fprintf(stderr, "L%d: division by zero\n", total_lines);
 		status = EXIT_FAILURE;
 		return;
 	}

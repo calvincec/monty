@@ -14,13 +14,13 @@ void _div(stack_t **stack, unsigned int total_lines)
 
 	if (!stack || !*stack || !((*stack)->next))
 	{
-		fprintf(stderr, "L%d: Stack is too short for division\n", total_lines);
+		fprintf(stderr, "L%d: can't div, stack too short\n", total_lines);
 		status = EXIT_FAILURE;
 		return;
 	}
 	if (((*stack)->n) == 0)
 	{
-		fprintf(stderr, "L%d: Division by zero error\n", total_lines);
+		fprintf(stderr, "L%d: division by zero\n", total_lines);
 		status = EXIT_FAILURE;
 		return;
 	}
